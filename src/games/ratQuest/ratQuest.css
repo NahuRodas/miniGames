@@ -6,14 +6,14 @@
 
 @font-face {
     font-family: mainTitle;
-    src: url(../resources/font.ttf);
+    src: url(/resources/font.ttf);
   }
-
-body{
+ 
+ body{
     background-color: rgb(202, 240, 248);
-}
-
-.container{
+ }
+ 
+ .container{
     margin: auto;
     width: fit-content;
     height:fit-content;
@@ -23,25 +23,40 @@ body{
     align-content: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-#banner{
+ }
+ 
+ #banner{
     margin-bottom: 30px;
     text-align: center;
     width: 100%;
     border-bottom: 4px rgb(3, 4, 94) solid;
-}
-
-h1{
+ }
+ 
+ #screen{
+    text-align: center;
+    font-weight: bold;
+ }
+ 
+ #user{
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+    background-color: rgb(202, 240, 248);
+    border-radius: 5px;
+    font-weight: bold;
+ }
+ 
+ 
+ h1{
     font-family: mainTitle, sans-serif;
     color: rgb(3, 4, 94);
-    font-size: 60px;
+    font-size: 40px;
     text-decoration-line: overline;
     text-decoration-style: wavy;
     text-shadow: 4px 4px rgb(144, 224, 239);
-}
-
-.menu{
+ }
+ 
+ .game{
     width: fit-content;
     background-color: rgb(144, 224, 239);
     margin: auto;
@@ -51,28 +66,41 @@ h1{
     border: 10px rgb(3, 4, 94) double;
     padding: 20px;
     border-radius: 25px;
-}
-
-.button{
+ }
+ 
+ .user-input{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+ }
+ 
+ .buttons{
+    width: 100%;
+    display: flex;
+ }
+ 
+ .button{
+    margin: 20px;
+    padding: 3px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    width: 200px;
+    width: 100px;
     height: fit-content;
-    padding: 5px;
     background-color: rgb(0, 180, 216);
     color: rgb(3, 4, 94);
     border: 2px rgb(3, 4, 94) solid;
     text-align: center;
     border-radius: 15px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
-}
-
-.button:hover{
+    cursor: pointer;
+ }
+ 
+ .button:hover{
     background-color: rgb(0, 119, 182);
     color: aliceblue;
-}
-
+ }
+ 
  footer{
     position: absolute;
     bottom: 3px;
