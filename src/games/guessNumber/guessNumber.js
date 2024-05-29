@@ -6,13 +6,13 @@ let     userGuess = 0, number = 0,
         userInput = document.getElementById("user"),
         curentGuess = document.getElementById("currentGuess");
 
-number = Math.floor(Math.random() * 100 + 1);
+number = Math.floor(Math.random() * max + 1);
 
 function submit() {
     userGuess = Number(userInput.value);
     curentGuess.textContent = userGuess;
 
-    if ( isNaN(userGuess) || userGuess < 1 || userGuess > 100 ) {
+    if ( isNaN(userGuess) || userGuess < min || userGuess > max ) {
         screen.textContent = "You must enter a Number in between 1 and 100.";
         curentGuess.textContent = "Bruh";
     }else if (userGuess < number) {
@@ -37,7 +37,7 @@ guessButton.onclick = function() {
 }
 
 newButton.onclick = function(){
-    number = Math.floor(Math.random() * 100 + 1);
+    number = Math.floor(Math.random() * max + 1);
     curentGuess.textContent = "";
     screen.textContent = "Enter any number (1 to 100) to start!";
 }
