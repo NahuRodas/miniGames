@@ -13,34 +13,21 @@
                 <h1>Rock Paper Sissors</h1>
             </header>
             <div class="game">
-                <div class="table">
-                    <div class="square">
-                        <button></button>
-                    </div>
-                    <div class="square">
-                        <button></button>
-                    </div>
-                    <div class="square">
-                        <button></button>
-                    </div>
-                    <div class="square">
-                        <button></button>
-                    </div>
-                    <div class="square">
-                        <button></button>
-                    </div>
-                    <div class="square">
-                        <button></button>
-                    </div>
-                    <div class="square">
-                        <button></button>
-                    </div>
-                    <div class="square">
-                        <button></button>
-                    </div>
-                    <div class="square">
-                        <button></button>
-                    </div>
+                <form class="user-choice" id="user-choice">
+                    <input type="radio" class="choice" id="rock" name="user-choice" value="1">
+                    <label for="rock" id="rock-label" class="choice-label">🗿</label><br>
+                    <input type="radio" class="choice" id="paper" name="user-choice" value="2">
+                    <label for="paper" id="paper-label" class="choice-label">📄</label><br>
+                    <input type="radio" class="choice" id="sissors" name="user-choice" value="3">
+                    <label for="sissors" id="sissors-label" class="choice-label">✂️</label>               
+                </form>
+                <div>
+                    <button class="button" id="play-button">Play</button>
+                    <button class="button" id="reset-button">Reset</button>
+                    <h3 id="ai-choice">AI choice: </h3>
+                </div>
+                <div>
+                    <h3 id="result"></h3>
                 </div>
                 <a class="button" href="../../index.html">Main menu</a>
             </div>

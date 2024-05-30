@@ -53,22 +53,32 @@
     border-radius: 25px;
  }
  
- 
-.table{
-   width: 300px;
-   height: 300px;
-   display: grid;
-   grid-template-columns: auto auto auto;
+.user-choice{
+   display: flex;
+   align-items: center;
+   justify-items: center;
 }
 
-button{
-   width: 90px;
-   height: 90px;
-   border: none;
-   background-color: rgb(202, 240, 248);
+.choice{
+   width: 0px;
 }
 
-button:hover{
+.choice-label{
+   box-sizing: border-box;
+   font-size: 60px;
+   margin: auto;
+   padding: 2.5px;
+}
+
+.choice-label:hover{
+   border: 1px rgb(3, 4, 94) solid;
+}
+
+.selected{
+   box-sizing: border-box;
+   font-size: 60px;
+   margin: auto;
+   padding: 2.5px;
    border: 1px rgb(3, 4, 94) solid;
 }
 
