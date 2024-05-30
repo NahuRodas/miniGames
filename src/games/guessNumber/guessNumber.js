@@ -4,7 +4,8 @@ let     userGuess = 0, number = 0,
         screen = document.getElementById("screen"),
         newButton = document.getElementById("new"),
         userInput = document.getElementById("user"),
-        curentGuess = document.getElementById("currentGuess");
+        curentGuess = document.getElementById("currentGuess"),
+        counter = 0;
 
 number = Math.floor(Math.random() * max + 1);
 
@@ -17,10 +18,13 @@ function submit() {
         curentGuess.textContent = "Bruh";
     }else if (userGuess < number) {
         screen.textContent = "The Number is higher.";
+        counter ++;
     }else if (userGuess > number) {
         screen.textContent = "The Number is lower.";
+        counter ++;
     }else{
-        screen.textContent = "Correct! The number is " + number + "!";
+        screen.textContent = "Correct! The number is " + number + "! (Amount of guesses " + counter + ")";
+
     }
 
     userInput.value = "";

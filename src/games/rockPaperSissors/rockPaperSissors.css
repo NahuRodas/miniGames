@@ -32,21 +32,6 @@
     border-bottom: 4px rgb(3, 4, 94) solid;
  }
  
- #screen{
-    text-align: center;
-    font-weight: bold;
- }
- 
- #user{
-    width: 200px;
-    height: 20px;
-    font-size: 15px;
-    background-color: rgb(202, 240, 248);
-    border-radius: 5px;
-    font-weight: bold;
- }
- 
- 
  h1{
     font-family: mainTitle, sans-serif;
     color: rgb(3, 4, 94);
@@ -68,17 +53,25 @@
     border-radius: 25px;
  }
  
- .user-input{
-    display: grid;
-    align-items: center;
-    justify-items: center;
- }
  
- .buttons{
-    width: 100%;
-    display: flex;
- }
- 
+.table{
+   width: 300px;
+   height: 300px;
+   display: grid;
+   grid-template-columns: auto auto auto;
+}
+
+button{
+   width: 90px;
+   height: 90px;
+   border: none;
+   background-color: rgb(202, 240, 248);
+}
+
+button:hover{
+   border: 1px rgb(3, 4, 94) solid;
+}
+
  .button{
     margin: 20px;
     padding: 3px;

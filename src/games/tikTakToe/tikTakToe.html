@@ -3,18 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiniGames: Tik Tak Toe</title>
+    <title>MiniGames: Tic Tac Toe</title>
     <link rel="stylesheet" href="tikTakToe.css">
 </head>
 <body>
     <div class="container">
         <div class="main-menu">
             <header id="banner">
-                <h1>Tik Tak Toe</h1>
+                <h1>Tic Tac Toe</h1>
             </header>
             <div class="game">
-                <h1>IN DEVELOPMENT</h1>
-                <a class="button" href="../../index.html">Main menu</a>
+                <div>
+                    <h3 id="turn">Player turn: 1</h3>
+                </div>
+                <div class="table">
+                    <div class="square">
+                        <button class="selection" id="top-left"></button>
+                    </div>
+                    <div class="square">
+                        <button class="selection" id="top-mid"></button>
+                    </div>
+                    <div class="square">
+                        <button class="selection" id="top-right"></button>
+                    </div>
+                    <div class="square">
+                        <button class="selection" id="mid-left"></button>
+                    </div>
+                    <div class="square">
+                        <button class="selection" id="center"></button>
+                    </div>
+                    <div class="square">
+                        <button class="selection" id="mid-right"></button>
+                    </div>
+                    <div class="square">
+                        <button class="selection" id="bot-left"></button>
+                    </div>
+                    <div class="square">
+                        <button class="selection" id="bot-mid"></button>
+                    </div>
+                    <div class="square">
+                        <button class="selection" id="bot-right"></button>
+                    </div>
+                </div>
+                <div class="menu">
+                    <!-- <button class="button" id="pvp">PVP</button>
+                    <button class="button" id="ai">AI</button> -->
+                    <button class="button" id="reset">Reset</button>
+                    <a class="button" href="../../index.html">Main menu</a>
+                </div>
             </div>
         </div>
         <footer>
