@@ -149,7 +149,7 @@ ready_button.onclick = function(){
     
     
 
-    if (amount_p_ships != 5) {
+    if (amount_p_ships !== 5) {
         screen.textContent = "Please place 5 ships, no more no less."
     }else{
         generateAiChoice()
