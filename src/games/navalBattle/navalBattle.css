@@ -6,8 +6,9 @@
 
 @font-face {
     font-family: mainTitle;
-    src: url(https://github.com/NahuRodas/miniGames/tree/main/resources/font.ttf);
+    src: url(/resources/font.ttf);
 }
+/*https://github.com/NahuRodas/miniGames/tree/main/resources/font.ttf*/
  
  body{
     background-color: rgb(202, 240, 248);
