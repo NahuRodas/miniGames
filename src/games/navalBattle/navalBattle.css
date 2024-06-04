@@ -5,10 +5,12 @@
 /* rgb(3, 4, 94) */
 
 @font-face {
-    font-family: mainTitle;
-    src: url(/resources/font.ttf);
+    font-family: 'mainTitle';
+    src: url('/resources/font.ttf');
+    src: url('/resources/font.otf');
 }
-/*https://github.com/NahuRodas/miniGames/tree/main/resources/font.ttf*/
+/*https://github.com/NahuRodas/miniGames/tree/main/resources/font.ttf
+https://github.com/NahuRodas/miniGames/blob/main/resources/font.ttf*/
  
  body{
     background-color: rgb(202, 240, 248);
@@ -35,7 +37,7 @@
   
  
  #game-title{
-    font-family: mainTitle, sans-serif;
+    font-family: 'mainTitle', sans-serif;
     color: rgb(3, 4, 94);
     font-size: 40px;
     text-decoration-line: overline;
