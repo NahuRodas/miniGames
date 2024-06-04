@@ -31,21 +31,7 @@
     width: 100%;
     border-bottom: 4px rgb(3, 4, 94) solid;
  }
- 
- #screen{
-    text-align: center;
-    font-weight: bold;
- }
- 
- #user{
-    width: 200px;
-    height: 20px;
-    font-size: 15px;
-    background-color: rgb(202, 240, 248);
-    border-radius: 5px;
-    font-weight: bold;
- }
- 
+  
  
  h1{
     font-family: mainTitle, sans-serif;
@@ -67,41 +53,100 @@
     padding: 20px;
     border-radius: 25px;
  }
- 
- .user-input{
-    display: grid;
-    align-items: center;
-    justify-items: center;
- }
- 
- .buttons{
-    width: 100%;
-    display: flex;
- }
- 
- .button{
-    margin: 20px;
-    padding: 3px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100px;
-    height: fit-content;
-    background-color: rgb(0, 180, 216);
-    color: rgb(3, 4, 94);
-    border: 2px rgb(3, 4, 94) solid;
-    text-align: center;
-    border-radius: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
- }
+
+ .side{
+   width: 300px;
+   height: 300px;
+   margin: auto;
+}
+
+.playfield{
+   display: grid;
+   grid-template-columns: auto auto auto auto auto auto;
+   gap: 5px;
+}
+
+.coordinate{
+   text-align: center;
+   font-weight: bold;
+   margin: auto;
+   display: flex;
+}
+
+.square, .hit, .water{
+   width: 40px;
+   height: 40px;
+   border: 1px rgb(3, 4, 94) solid;
+   background-color: rgb(202, 240, 248);
+   color: rgb(3, 4, 94);
+   text-align: center;
+   user-select: none;
+}
+
+.not-ready{
+   cursor: not-allowed;
+}
+
+.hidden{
+   background-color: rgb(202, 240, 248);
+   color: rgb(202, 240, 248);
+}
+
+.hit{
+   background-color: rgb(0, 119, 182);
+   color: aliceblue;
+   text-decoration: line-through;
+}
+
+.water{
+   background-color: rgb(144, 224, 239);
+}
+
+#screen{
+   text-align: center;
+   background-color: rgb(202, 240, 248);
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px rgb(0, 119, 182) solid;
+}
+
+.end-game{
+   width: 40px;
+   height: 40px;
+   border: 1px rgb(3, 4, 94) solid;
+   background-color: rgb(202, 240, 248);
+   color: rgb(3, 4, 94);
+   text-align: center;
+   user-select: none;
+}
+
+.button{
+   margin: 20px;
+   padding: 3px;
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+   width: 100px;
+   height: fit-content;
+   background-color: rgb(0, 180, 216);
+   color: rgb(3, 4, 94);
+   border: 2px rgb(3, 4, 94) solid;
+   text-align: center;
+   border-radius: 15px;
+   font-size: 15px;
+   font-weight: bold;
+   cursor: pointer;
+}
  
  .button:hover{
     background-color: rgb(0, 119, 182);
     color: aliceblue;
  }
+
+ hr{
+   background-color: rgb(3, 4, 94);
+ }
  
  footer{
     position: absolute;
-    bottom: 3px;
+   bottom: 1%;
  }
