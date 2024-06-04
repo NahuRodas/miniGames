@@ -133,6 +133,7 @@ reset_button.onclick = function(){
     breaker = 0;
     sin_ship_ai = 0;
     sin_ship_p = 0;
+    amount_p_ships = 0;
     screen.textContent = "Place 5 ships on your side, then press Ready."
     ai_options.forEach(element => {
         element.className = "square hidden ai-field";
