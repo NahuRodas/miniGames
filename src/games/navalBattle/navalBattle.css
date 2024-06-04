@@ -6,8 +6,8 @@
 
 @font-face {
     font-family: 'mainTitle';
-    src: url('/resources/font.ttf');
-    src: url('/resources/font.otf');
+    src: url('/resources/font.ttf') format("truetype");
+    src: url('/resources/font.otf') format("otf");
 }
 /*https://github.com/NahuRodas/miniGames/tree/main/resources/font.ttf
 https://github.com/NahuRodas/miniGames/blob/main/resources/font.ttf*/
